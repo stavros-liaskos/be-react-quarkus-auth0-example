@@ -1,10 +1,29 @@
+setup:
+  config:
+    QUARKUS_HTTP_CORS_METHODS: GET,PUT,POST,HEAD,OPTIONS,DELETE
+    QUARKUS_HTTP_CORS_ORIGINS: https://www.releaseraccoon.online,http://www.releaseraccoon.online,https://release-raccoon.eu.auth0.com,https://backend-release-raccoon-71a89de4778a.herokuapp.com,http://localhost:3000
+    AUTH0_CLIENT_ID: ${AUTH0_CLIENT_ID}
+    AUTH0_CLIENT_SECRET: ${AUTH0_CLIENT_SECRET}
+    AUTH0_DOMAIN: ${AUTH0_DOMAIN}
+    DATABASE_URL: ${DATABASE_URL}
+    DB_HOST: ${DB_HOST}
+    DB_NAME: ${DB_NAME}
+    DB_PASSWORD: ${DB_PASSWORD}
+    DB_PORT: ${DB_PORT}
+    DB_USERNAME: ${DB_USERNAME}
+    ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
+    ELASTIC_PORT: ${ELASTIC_PORT}
+    ELASTIC_PROTOCOL: ${ELASTIC_PROTOCOL}
+    ELASTIC_URL: ${ELASTIC_URL}
+    ELASTIC_USERNAME: ${ELASTIC_USERNAME}
+    JAVA_OPTS: ${JAVA_OPTS}
+    LASTFM_API_KEY: ${LASTFM_API_KEY}
+    LASTFM_APPLICATION_NAME: ${LASTFM_APPLICATION_NAME}
+    LASTFM_SHARED_SECRET: ${LASTFM_SHARED_SECRET}
+    MAIL_PASSWORD: ${MAIL_PASSWORD}
+    MAIL_USERNAME: ${MAIL_USERNAME}
 build:
   docker:
     web: Dockerfile
 run:
   web: java -jar /deployments/app.jar
-setup:
-  config:
-    QUARKUS_HTTP_CORS_METHODS: GET,PUT,POST,HEAD,OPTIONS,DELETE
-    QUARKUS_HTTP_CORS_ORIGINS: https://www.releaseraccoon.online,http://www.releaseraccoon.online,https://api.releaseraccoon.online,https://release-raccoon.eu.auth0.com,https://backend-release-raccoon-71a89de4778a.herokuapp.com,http://localhost:3000
-
