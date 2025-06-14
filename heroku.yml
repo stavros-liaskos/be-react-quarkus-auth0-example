@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: ech env && java -jar /deployments/app.jar
+  web: env && java -jar /deployments/app.jar
