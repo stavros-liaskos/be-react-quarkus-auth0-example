@@ -2,7 +2,7 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: env && java -jar /deployments/app.jar
+  web: java -jar /deployments/app.jar
 setup:
   config:
     QUARKUS_HTTP_CORS_METHODS: GET,PUT,POST,HEAD,OPTIONS,DELETE
