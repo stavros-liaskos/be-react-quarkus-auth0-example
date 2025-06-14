@@ -3,3 +3,8 @@ build:
     web: Dockerfile
 run:
   web: env && java -jar /deployments/app.jar
+setup:
+  config:
+    QUARKUS_HTTP_CORS_METHODS: GET,PUT,POST,HEAD,OPTIONS,DELETE
+    QUARKUS_HTTP_CORS_ORIGINS: https://www.releaseraccoon.online,http://www.releaseraccoon.online,https://api.releaseraccoon.online,https://release-raccoon.eu.auth0.com,https://backend-release-raccoon-71a89de4778a.herokuapp.com,http://localhost:3000
+
