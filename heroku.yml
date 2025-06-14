@@ -1,7 +1,7 @@
 setup:
   config:
     QUARKUS_HTTP_CORS_METHODS: GET,PUT,POST,HEAD,OPTIONS,DELETE
-    QUARKUS_HTTP_CORS_ORIGINS: https://www.releaseraccoon.online,http://www.releaseraccoon.online,https://release-raccoon.eu.auth0.com,https://backend-release-raccoon-71a89de4778a.herokuapp.com,http://localhost:3000
+    QUARKUS_HTTP_CORS_ORIGINS: https://fe-release-raccoon-39290a595f02.herokuapp.com/
     AUTH0_CLIENT_ID: ${AUTH0_CLIENT_ID}
     AUTH0_CLIENT_SECRET: ${AUTH0_CLIENT_SECRET}
     AUTH0_DOMAIN: ${AUTH0_DOMAIN}
